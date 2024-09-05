@@ -1,0 +1,25 @@
+.Text-container {
+    max-width: 1000px;
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+.DropDown {
+    font-size: 20px;
+}
+.button{
+    font-size: 20px;
+    padding: 10px;
+}
+.FullText {
+    max-width: 1000px;
+    line-height: 50px;
+}
+.CompQ {
+    max-width: 1000px;
+    line-height: 50px;
+}
+.PennController {
+    max-width: 1000px;
+    left: 50vw !important;
+    transform: translateX(-50%);
+}

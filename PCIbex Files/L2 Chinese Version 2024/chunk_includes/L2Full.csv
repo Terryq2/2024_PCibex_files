@@ -1,0 +1,64 @@
+ItemNum,WordCount,FullText,CompYN,CompQ,CompKey,CorResp
+1,16,Very few issues can bring together lawmakers of both parties. Animal cruelty is one of them.,N,,,
+2,19,"Koalas have been running into hard times. They have suffered for years from habitat destruction, dog attacks, automobile accidents.",N,,,
+3,25,"Pancreatic cancer has a bad reputation. It is a terrible disease, but most people do not realize there are ways that early detection can help.",Y,Early detection does not help with pancreatic cancer.,2,FALSE
+4,22,"Some nutrition experts say eggs are good for you, even though they are high in cholesterol. Others are sure they are bad.",Y,Experts are divided on the nutritious value of eggs.,1,TRUE
+5,27,"Experts generally agree that watching a lot of television is bad for children. Now a new study suggests it may not be very good for adults, either.",Y,A new study suggests that watching televison may be bad for adults.,1,TRUE
+6,30,"Legislators and gun safety advocates often focus on how guns are purchased. But many lives could be saved, especially among children, if they looked more at how they are stored.",N,,,
+7,29,"In general, any exercise improves our health. But a wealth of recent science and personal experience indicate that different people can respond to similar exercise routines in different ways.",N,,,
+8,30,"When new breast cancer drugs come to market, there is little data to indicate whether they are safe or effective in men. Some new drugs are approved only for women.",Y,Many new breast cancer drugs are safe for men.,2,FALSE
+9,29,"An extensive study confirms that red meat might not be that bad for you. But it is bad for the planet, with chicken and pork less harmful than beef.",Y,Beef is harmful to the environment.,1,TRUE
+10,28,The ground around the building slopes away. That allows the classroom windows to be low enough for children to see out while still being high above the ground.,Y,"The ground does not slope, making it hard for children to see out of the windows.",2,FALSE
+11,28,"Farmers and plant breeders are in a race against time. The world population is growing rapidly, requiring ever more food, but the amount of cultivable land is limited.",N,,,
+12,20,One benefit of discovery is that you get to name the things you discovered. Astronomy is blessed in this regard.,Y,Astronomers are allowed to name their discoveries.,1,TRUE
+13,25,The overwhelming majority of snails live in shells that coil to the right. But occasionally some are born with shells that turn the other way.,N,,,
+14,22,California has positioned itself as a leader in the fight against climate change. It leads the nation by far in solar power.,Y,California is taking action against climate change.,1,TRUE
+15,25,"Climate change will inevitably transform the way the world produces goods. Farmers who produce wine grapes, an especially sensitive crop, are already feeling those effects.",Y,Climate change is not going to impact wine grapes.,2,FALSE
+16,17,The many whiskeys of Japan are complex and often expensive. Learning about them can be a challenge.,Y,It is easy to learn about Japanese whiskey because there are only a few kinds.,2,FALSE
+17,27,Great snow conditions can make a ski trip magical. Skiers can weight the odds in their favor by picking their destinations according to the time of winter.,N,,,
+18,19,"Earth is warming, and we know why. Light is reflected and absorbed by clouds, air, oceans, ice and land.",Y,Earth is warming in part due to the absorption of light.,1,TRUE
+19,15,Nobody ever really tells you how to breathe. You just know how to do it.,N,,,
+20,20,"Imagine an animal that looks like a dinosaur, and you probably will not imagine a bat. But that may change.",N,,,
+21,20,Video games work hard to hook players. Designers use predictive algorithms and principles of behavioral economics to keep fans engaged.,Y,Video game designers incorporate concepts to make the games more addictive.,1,TRUE
+22,12,Americans are feeling better about the economy. Or at least Republicans are.,Y,Only some Americans are feeling good about the economy.,1,TRUE
+23,19,Parasites are a huge force in the natural world. For the most part they simply feed on their hosts.,Y,Feeding on hosts is only a small part of parasites' role in the natural world.,2,FALSE
+24,16,There should be no question that autistic people need and value social connections. We all do.,Y,Not all autistic people require and value social connections.,2,FALSE
+25,26,"Once upon a time, the sky was everything above the earth, which lay at the center of human experience. The sky was the place of gods.",Y,The sky was previously believed to be the home of the gods.,1,TRUE
+26,28,"The abundance of uncontrolled case studies can give an impression that a single dietary item, like juice, is linked with obesity. But they cannot determine cause and effect.",Y,Case studies effectively link dietary items with outcomes.,2,FALSE
+27,27,"Americans are having fewer babies. At first, researchers thought the declining fertility rate was because of the recession, but it kept falling even as the economy recovered.",Y,Economic changes have not affected the fertility rate in America.,1,TRUE
+28,28,New research suggests that more money really does lead to a more satisfying life. Surveys of thousands of Swedish lottery winners have provided persuasive evidence of this truth.,Y,Surveys have not found evidence connecting money to life satisfaction.,2,FALSE
+29,15,"Milan has no sea. It has no river or lake, just a few ebbing canals.",Y,Milan is surrounded by rivers and lakes.,2,FALSE
+30,19,Morality exists only because we evolved the capacity to empathize. And empathy provides the best guide to moral action.,Y,Morality developed independent of empathy.,2,FALSE
+31,20,"Story creates culture. It teaches us to feel, think and behave in ways generally approved of by those around us.",N,,,
+32,24,"Hospitals are often thought of as the hubs of our health care system. But hospital closings are rising, particularly in some types of communities.",Y,More hospitals are closing despite being important health care centers.,1,TRUE
+33,17,Two sexes have never been enough to describe human variety. Not in biblical times and not now.,N,,,
+34,24,The biggest racial preferences in this country have nothing to do with college admissions or job offers. They have to do with political power.,Y,Racial preference is greater in politics than in college admissions.,1,TRUE
+35,27,"Businesses can deliver everything on demand, from dinner to dry cleaning. Some will even show up at your door to give you cupcakes or walk your dog.",N,,,
+36,23,"Planning for vacation is fun. We make lists of clothes to pack and museums to visit, anticipating the relaxation and fun to come.",N,,,
+37,19,"Certain types of wine seem incapable of winning popular acceptance. Riesling is one, particularly in its moderately sweet form.",Y,The sweet form of Riesling is popular.,1,TRUE
+38,22,Bankers kept their name tags obscured behind ties. Many tried to keep a low profile and avoided talking to the news media.,Y,The bankers tried to hide their names and avoid the media.,1,TRUE
+39,24,Hollywood executives are not so different from the stars they employ. They want to be seen in the right booths at the right restaurants.,Y,Hollywood executives do not care about where they are seen.,2,FALSE
+40,30,"The more we learn about how people really think, the more we must rethink economic theory. Changes in fundamental beliefs play a major role in the fluctuations of the economy.",Y,Peoples' beliefs are unrelated to economic theory.,2,FALSE
+41,28,"History suggests that the world is about due for another financial crisis. One of the places it might start, according to a growing number of indicators, is Italy.",Y,Italy is expected to undergo a financial crisis.,1,TRUE
+42,29,Few doubt that energy has improved lives and enabled human progress. Yet one of the biggest challenges facing the world is the polarized debate over the future of energy.,N,,,
+43,15,Dance is about change. The body keeps altering its shape while we watch it move.,N,,,
+44,21,"Plants have no eyes, no ears, no mouth and no hands. They do not have a brain or a nervous system.",Y,Some plants have nervous systems.,2,FALSE
+45,19,"There are many more gorillas and chimpanzees than previously believed, new research finds. Nonetheless, their numbers are rapidly declining.",Y,"Despite decreasing numbers, there are more gorillas than researchers thought.",1,TRUE
+46,11,Forests are disappearing. Maps show shrinking woodlands all over the world.,Y,There is little indication that forests around the world are disappearing.,2,FALSE
+47,24,"A cowboy walks into a bar. Or more specifically, a Nigerian immigrant grad student in a cowboy hat walks into a bar in Oklahoma.",N,,,
+48,17,One man vanished diving at midnight. Another was attacked by a great white shark in deep water.,Y,The two men were both attacked by a shark.,2,FALSE
+49,28,"Student loans are central to financing college educations, yet millions of borrowers are in default. That is clear evidence that the system is in dire need of improvement.",N,,,
+50,22,People seem to be more worried than ever about stress. We hear that stress can lead to everything from depression to cancer.,Y,"Despite the side effects, people are less woried about stress.",2,FALSE
+51,30,Music can transport us back in time or help usher in new ways of thinking. It can capture a historical moment or offer an escape from the world around us.,Y,Music is able to convey historical moments and new outlooks.,1,TRUE
+52,30,"The laws that authorize medical aid in dying have worked exactly as intended, the evidence shows. They have benefited dying patients and their families without causing any harm to anyone.",Y,Laws allowing medical aid in dying have brought harm to patients and their families.,2,FALSE
+53,18,"Israel cannot define a Jew. And the more it attempts to do so, the more obvious that becomes.",N,,,
+54,27,"Corporate tax cuts will put billions of dollars back in the hands of businesses this year. Naturally, people want to know how those businesses will spend it.",Y,People are curious about how businesses will spend the tax cuts they receive.,1,TRUE
+55,18,"Florida, it seems, has always been a popular destination. Even the first known Americans gravitated to the state.",Y,Florida only recently became a popular destination.,2,FALSE
+56,24,"When early humans discovered how to build fires, life became much easier in many regards. They huddled around fire for warmth, light and protection.",N,,,
+57,21,"For most of human history, nobody ate a vegetable for pleasure. After all, vegetables have no evolutionary imperative to be delicious.",Y,People eat vegetables because evolution has led vegetables to taste better.,2,FALSE
+58,12,Animals around the world are on the move. So are their parasites.,Y,"Animals around the world are moving around, but their parasites are staying in place.",2,FALSE
+59,21,"Gifts are often left on front row seats at fashion shows for guests. Rarely, however, are they placed on every seat.",Y,"At fashion shows, it is more common for gifts to be left on the front row, not on every seat.",1,TRUE
+60,27,"Trying to figure out why humans cry is exhausting. We cry about death, violence, breakups, abandoned puppies, sweet kisses and words charged with all kinds of meanings.",Y,"Humans cry about many things, making it hard to understand why humans cry.",1,TRUE
+61,17,The most popular movie in India this summer is about a toilet. It nearly causes a divorce.,N,,,
+62,20,Bargain hunters have begun to pay close attention to emerging market stocks. They are a little late to the game.,N,,,
+63,17,One new drug promises to stop cancer from spreading to other organs. Another would treat blood cancer.,Y,There are new drugs promising to treat cancer.,1,TRUE

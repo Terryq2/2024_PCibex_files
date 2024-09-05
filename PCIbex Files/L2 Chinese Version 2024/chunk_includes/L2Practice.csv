@@ -1,0 +1,7 @@
+ItemNum,WordCount,FullText,CompYN,CompQ,CompKey,CorResp
+13,31,"For workers hired during the good times, the benefits can be enduring. Economic research has found that once people are drawn into the labor force, they tend to stay in it.",Y,Workers hired during good times will often stay in the labor force. ,1,TRUE
+12,28,"Batteries can account for about half the cost of an electric car. As electric vehicles become increasingly common, whoever commands the battery business will rule the auto industry.",Y,The battery business is not likely to influence the auto industry.,2,FALSE
+40,19,"There are many ways for a society to fund college. Loans, grants and free tuition are all viable options.",N,,,
+42,33,Airports in major metropolitan areas have to balance how many gates they want with how many they can build because of space and financial constraints. Even airports in less dense areas face limitations.,Y,Airports in less dense areas do not face limitations like large metropolitan airports. ,2,FALSE
+25,25,"As well as a bridge, Denmark and Sweden are also joined by four ferry routes. Those connections will be subjected to the new border checks.",Y,The ferry routes will be subject to the new border checks.,1,TRUE
+16,22,"Novel influenza viruses originate in migratory ducks and geese. The viruses spread first to domestic poultry flocks, then to pigs and humans.",N,,,

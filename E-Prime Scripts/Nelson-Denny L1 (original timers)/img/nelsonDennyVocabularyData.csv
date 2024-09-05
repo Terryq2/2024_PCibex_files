@@ -1,0 +1,101 @@
+Statement,TestedWord,TestedWordX,TestedWordY,TestedWordWidth,RespOpt1,RespOpt1Width,RespOpt2,RespOpt2Width,RespOpt3,RespOpt3Width,RespOpt4,RespOpt4Width,RespOpt5,RespOpt5Width,CorrectResp
+Plump hands are,Plump,32,37,45,thin,21,strong,36,shapely,45,chubby,42,small,31,4
+If you object~ you,object,71,175,43,oppose,42,approve,44,throw out,53,offer,25,observe,44,1
+To get forgiveness is to get,forgiveness,79,313,81,praised,42,blamed,42,scolded,45,pardoned,53,helped,38,4
+To probe is to,probe,52,37,42,search,39,protect,40,cure,25,reason,39,prevent,41,1
+Conning means,Conning,32,175,59,caring,35,tricking,42,collecting,55,helping,41,writing,37,2
+To maltreat is to,maltreat,52,313,57,curse,32,prescribe,53,abuse,35,pretend illness,84,operate,43,3
+A brochure is a,brochure,46,37,62,letter,30,broken piece,74,dialect,38,sharp rod,54,pamphlet,53,5
+To launch is to,launch,52,175,45,praise,35,snack,35,rinse,28,anchor,40,start,26,5
+Unique means,Unique,32,313,50,good,28,solid,27,complete,53,widely used,68,one and only,74,5
+Corridors are,Corridors,32,37,67,passageways,79,tunnels,42,openings,52,chambers,57,glimpses,52,1
+A current trend is,current,46,175,48,past,25,expected,53,decreasing,63,present,43,future,32,4
+Grotesque shoes are,Grotesque,32,313,74,for dancing,63,large,28,ugly,24,pointed,42,strong,36,3
+The art of governing refers to,governing,101,37,69,ruling,31,obeying,45,taxing,35,growing,44,pleasing,48,1
+A metamorphosis is a,metamorphosis,46,175,109,severe phobia,79,shock,35,change,42,photograph,64,stark image,68,3
+To venture is to,venture,52,313,51,open,28,watch,34,write,27,risk,21,profit,28,4
+Economic aid refers to,Economic,32,37,71,money,39,information,63,education,56,fanning,41,culture,39,1
+To shuttle is to go,shuttle,52,175,45,up,14,away,30,back and forth,82,aside,31,astray,36,3
+Nonentity,Nonentity,32,313,65,not existing,67,entire,32,nonsense,56,nucleus,45,abnormal,53,1
+A trifle is a,trifle,46,37,30,small article,70,stone,32,grant,29,gift,17,little trick,53,1
+To negotiate terms is to,negotiate,52,175,66,summarize,64,break off,51,ignore,35,sign,24,arrange,43,5
+To presume is to,presume,52,313,62,start,26,presuppose,67,request,43,suggest,46,repeat,36,2
+Misconstrued means,Misconstrued,32,37,94,misspelled,62,misinterpreted,82,misled,38,hopeless,52,bent,25,2
+Devastatingly means,Devastatingly,32,175,94,hopefully,51,helplessly,58,rightly,35,destructively,72,largely,38,4
+Validly means,Validly,32,313,46,valiantly,46,acceptably,63,costly,35,cleverly,43,hopefully,51,2
+Discriminating means,Discriminating,32,37,101,concluding,62,finding,37,disobeying,62,discerning,59,changing,52,4
+A granary is a,granary,46,175,53,cookie,38,storehouse,64,special school,83,farmer's union,80,small train,60,2
+To attain success is to,attain,52,313,39,describe it,60,reach it,43,buy it,32,work toward it,80,expect it,50,2
+A nomadic group is,nomadic,46,37,61,savage,40,roving,33,rural,25,foreign,38,small,31,2
+Something obscure is,obscure,111,175,57,painful,37,opaque,42,clear,29,hidden,38,old,17,4
+Murkiness is,Murkiness,32,313,72,lowness,47,moisture,50,quiet,28,sincerity,49,haziness,52,5
+An adept performer is,adept,55,37,41,active,33,talkative,47,changeable,66,skilled,37,happy,35,4
+To recoil is to,recoil,52,175,39,lean forward,69,fall back,48,remember,59,stretch,40,continue,49,2
+A hacienda is a,hacienda,46,313,65,happy farewell,82,haystack,53,balcony,45,country house,82,kind of food,66,4
+Depicted means,Depicted,32,37,65,worn out,49,settled,39,lowered,44,portrayed,54,dependent on,78,4
+Inescapable means,Inescapable,32,175,85,capable,45,fearless,45,hopeless,52,tireless,42,unavoidable,67,5
+An abhorred idea is,abhorred,55,313,64,clung to,46,hated,32,wondered at,70,given up,47,assumed,53,2
+Indomitable means,Indomitable,32,37,81,ineffective,56,undomesticated,92,unconquerable,84,studious,49,industrious,63,3
+Anguish refers to,Anguish,32,175,57,hate,25,joy,17,excitement,64,suffering,48,disinterest,60,4
+A connoisseur is,connoisseur,46,313,85,a nobleman,67,an old-timer,69,an expert,54,a glutton,50,a snob,39,3
+To emit is to,emit,52,37,31,confess,45,send forth,57,suggest,46,enter,30,die,17,2
+A compost is a,compost,46,175,61,fence,31,fruit dish,49,mixture,43,stump,36,column,42,3
+Speaking vaingloriously is speaking,vaingloriously,103,313,94,helpfully,47,bravely,40,boastfully,55,sadly,31,openly,38,3
+A titillating movie is,titillating,46,37,57,depressing,63,outstanding,67,exciting,45,comical,45,tasteless,53,3
+To convey is to,convey,52,175,49,guide,31,carry,29,drive,26,charge,39,collect,38,2
+If it is obsolete~ it is,obsolete,71,313,60,used,28,not clear,51,out-of-date,61,obscene,49,evident,40,3
+Encroachment means,Encroachment,32,37,101,using,31,developing,60,invading,46,ending,38,lowering,47,3
+If you are crafty~ you are,crafty,98,175,37,sly,17,crazy,32,skillful,36,cranky,39,critical,38,1
+An inhibition is a,inhibition,55,313,63,habit,28,failure,34,connection,63,dwelling,46,restriction,57,5
+If there is pandemonium~ there is,pandemonium,98,37,99,rain,21,money,39,tumult,36,revenge,44,assistance,63,3
+To savor is to,savor,52,175,39,enjoy,31,keep,28,cure,25,wash,30,cook slowly,68,1
+An imperative decision is,imperative,55,313,74,improper,51,urgent,36,hopeless,52,unnecessary,74,constructive,69,2
+Donned means,Donned,32,37,56,put on,36,started,40,taken off,50,sat down,52,sounded,49,1
+Discerned means,Discerned,32,175,73,disappeared,70,perceived,54,scowled,47,heard,32,soothed,46,2
+A vindictive person is,vindictive,46,313,65,hopeful,41,strong,36,mild-mannered,85,practical,49,spiteful,41,5
+Comatose means,Comatose,32,37,74,unconscious,73,punctuated,64,slow,26,free-flowing,64,hostile,38,1
+A credo is a,credo,46,175,41,small opening,80,clue,24,ridge,28,statement of belief,107,tall plume,56,4
+Aeons are,Aeons,32,313,46,years,32,aches,35,endeavors,58,ages,28,seeds,35,4
+To degrade is to,degrade,52,37,60,debase,42,deliver,37,bulldoze,48,evaluate,47,suspect,46,1
+Maxims are,Maxims,32,175,55,crowds,41,minutes,46,essays,42,gadgets,46,sayings,45,5
+An impending crisis is,impending,55,313,74,severe,37,unexpected,67,personal,49,approaching,70,obvious,43,4
+Facets refer to,Facets,32,37,49,causes,42,groups,39,aspects,46,truths,33,skills,30,3
+To reiterate is to,reiterate,52,175,59,repeat,36,reject,32,trace,29,destroy,43,write,27,1
+To play havoc is to,havoc,84,313,42,fight,24,aid,17,ruin,21,shelter,40,acquire,42,3
+Impeccable means,Impeccable,32,37,81,immovable,61,imminent,53,subtle,35,flawless,46,authoritative,69,4
+Ineptness means,Ineptness,32,175,67,awkwardness,78,strangeness,71,wildness,50,vagueness,61,willingness,63,1
+To trudge is to,trudge,52,313,45,plod,24,hasten,39,loiter,29,plunge,38,walk,26,1
+Malleability refers to,Malleability,32,37,78,brittleness,60,smallness,59,density,42,evenness,54,pliability,47,5
+A palatable dish is,palatable,46,175,65,large,28,smooth,43,tasty,29,bland,31,healthful,48,3
+A simpleton is,simpleton,46,313,68,self-conscious,83,strange,43,crazy,32,silly,23,sympathetic,71,4
+To impair is to,impair,52,37,45,match,36,fix,13,practice,46,injure,31,improve,44,4
+Adversity is,Adversity,32,175,65,faith,24,progress,50,worry,31,misfortune,60,capability,55,4
+Provocation refers to,Provocation,32,313,84,training,42,stimulation,63,lying,27,occupation,63,opening,45,2
+A terse statement is,terse,46,37,36,wordy,34,awkward,50,spicy,31,short,29,legal,27,4
+To stymie is to,stymie,52,175,46,by-pass,46,accelerate,60,obstruct,47,strike,32,fail,16,3
+Unduly means,Unduly,32,313,47,shortly,39,lively,28,wavy,28,excessively,67,moderately,64,4
+A melancholy individual is,melancholy,46,37,78,sad,21,sick,24,playful,37,tender,37,sentimental,67,1
+To succumb is to,succumb,52,175,63,help,24,prosper,44,search,39,sue,21,yield,27,5
+Fluted means,Fluted,32,313,44,grooved,44,perforated,57,inserted,46,excited,42,flourished,55,1
+A dour official is,dour,46,37,32,ancient,42,sick,24,clever,34,distrustful,56,ill-tempered,67,5
+Ire refers to,Ire,32,175,18,irritation,46,anger,33,pain,24,faults,31,suggestions,70,2
+To conjure is to,conjure,52,313,51,join,20,call up,38,heal,24,plot,21,judge,31,2
+A congenial person is considered,congenial,46,37,68,agreeable,56,knowledgeable,85,well-born,51,talkative,47,quiet,28,1
+To be impeded is to be,impeded,74,175,63,hurried,39,tormented,58,accused,49,improved,51,hindered,49,5
+Kindred spirits are,Kindred,32,313,56,kind,24,strange,43,alike,27,young,35,unusual,45,3
+A mire is a,mire,46,37,32,small mirror,69,farm,25,sharp glance,74,bog,21,breed of cat,68,4
+To be disparaging is to be,disparaging,74,175,84,self-seeking,69,controlling,59,displaying,58,quieting,45,belittling,48,5
+Invariably means,Invariably,32,313,65,irregularly,56,always,40,seldom,42,usually,41,frequently,56,2
+Expository material is,Expository,32,37,74,descriptive,61,poetic,35,theoretical,60,lengthy,42,explanatory,67,5
+Lucrative means,Lucrative,32,175,64,brilliant,41,practical,49,profitable,52,established,66,inventive,48,3
+To derogate is to,derogate,52,313,64,open,28,depend,42,support,43,detract,40,tranquilize,59,4
+Autonomy means,Autonomy,32,37,70,technical perfection,112,independence,80,motor-driven,70,composite,60,welfare,40,2
+An incisive comment is,incisive,55,175,53,questioning,66,harsh,32,unclear,43,ordinary,46,penetrating,64,5
+An unprecedented move is,unprecedented,55,313,105,unexampled,70,uncertain,53,inexact,42,customary,61,pressured,57,1
+Squalid suggests something,Squalid,32,37,54,irregular,47,flat,17,square,39,soft,21,filthy,27,5
+To be inundated is to be,inundated,74,175,69,washed,44,occupied,52,touched,46,flooded,41,discovered,61,4
+To sit pensively is to sit,pensively,72,313,65,quietly,38,tiredly,35,thoughtfully,66,restlessly,56,stiffly,30,3
+Tenets are,Tenets,32,37,46,doctrines,53,renters,40,occupants,60,lawyers,44,structures,58,1
+Veritably means,Veritably,32,175,61,absolutely,59,verbally,43,similarly,48,hopefully,51,truly,25,5
+An imminent change is,imminent,55,313,64,important,54,impending,59,timely,35,uncertain,53,drastic,39,2
+Condiments are,Condiments,32,37,85,conditions,59,shelters,46,habits,35,contracts,54,seasonings,66,5
