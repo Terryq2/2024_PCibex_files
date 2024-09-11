@@ -10,8 +10,7 @@ NOTES FOR LIN FROM MAX ABOUT REPURPOSING FOR NEW PARTICIPANTS OUTSIDE OF ORIGINA
 
 
 /*
-I made comments to try to trace the program and learn about PCIbex. Comments not named, 
-are comments made either by Max the creator of this experiment or Jeremy the creator of PCIbex
+I made comments to try to trace the program and learn about PCIbex.
 */
 
 /* 
