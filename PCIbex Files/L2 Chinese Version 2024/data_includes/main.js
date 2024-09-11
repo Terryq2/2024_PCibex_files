@@ -9,34 +9,89 @@ NOTES FOR LIN FROM MAX ABOUT REPURPOSING FOR NEW PARTICIPANTS OUTSIDE OF ORIGINA
 -Search for "XXXX" in comments for places to change based on language
 
 
-
-
-
+/*
+I made comments to try to trace the program and learn about PCIbex. Comments not named, 
+are comments made either by Max the creator of this experiment or Jeremy the creator of PCIbex
 */
+
 /* 
+
+
 Notes
+
 The showWord command is where the punctuation manipulation occurs, it seems that dashed only changes when changing the length of the masks to something other than their original length
 Line breaks <br> must not have a space before them, otherwise they require a button press to move through.
 Comments break things in the .css files, so don't use them.
 */
-// These two functions were written by Jeremy (PCIbex creator), I have limited understanding of their functionality.
-showWord = (arrayOfWords,showIndex) => "<p>" + // swap "<p>" with "<p style='font-family: monospace;'>" to allow the masked font to change
-  arrayOfWords.map( (word,n) => {
-    const letters = word;  //j this only keeps letters (and numbers) 
-    if (n==showIndex) return "<span>"+letters+"</span>";
+
+// Max: These two functions were written by Jeremy (PCIbex creator), I have limited understanding of their functionality.
+
+
+// showWord is the function name. The function has two variables as input: the sentence, and the index of the word we want to show
+
+showWord = (array_of_word,show_index) => "<p>" + // swap "<p>" with "<p style='font-family: monospace;'>" to allow the masked font to change
+
+    // The body of the function follows after the arrow
+
+
+    array_of_word.map( (word,current_index) => {
+    //.map() iterates over the array for each word and current index n and creates and populates a new array with the output
+    // of the function when called over every item of the array
+
+    const letters = word;  //j this only keeps letters (and numbers) // type auto deduction property of JS
+    if (current_index==show_index) return "<span>"+letters+"</span>";
+    // if current index is equal to show_index we return the letter in a span container
+
     else return "<span style=\'border-bottom:solid 1px black;\'><span style='visibility: hidden;'>"+letters+"</span></span>";
+    // otherwise we return a span container that has a bottom border revealed but the words themselves hidden
+    // This accounts for the masked words
+
+
+    // Example output of array_of_word.map( (word,current_index) where array_of_word = ["apple", "banana", "cherry"]
+    // and show_index = 1
+        
+    //   [<span style='border-bottom:solid 1px black;'>
+    //     <span style='visibility: hidden;'>apple</span>
+    //   </span>,
+    //   <span>banana</span>,
+    //   <span style='border-bottom:solid 1px black;'>
+    //     <span style='visibility: hidden;'>cherry</span>
+    //   </span>]
+
+
+
+
   } ).join(" ") + "</p>"; // the " " dictates what character is used to separate each word, can use &nbsp instead to allow multiple spaces
+  // join() concatenates the words into a sentence
+
+
 dashed = (name, sentence) => {
+
     const words = sentence.split(" ");  //j Use space to break string into array
+
     return [  //j Return an array of key.wait + text.print commands
         [ newText(name,showWord(words)).print() ], //j First reveal no word
+
+        // No index is passed, so no word will be revealed
+
         ...words.map( (word,index) => [
             newKey(name+"-"+index+"-"+word," ").log().wait(), 
-            getText(name).text( showWord(words,index) ) //j reveal INDEXth word
+            
+            //New key is created; triggered by space; identified by name+"-"+index+"-"+word
+
+
+            getText(name).text(showWord(words,index)) //j reveal INDEXth word
+            
+
+            // Massive inefficiency? For each word a new array of size array.length() is created? Overall O(n^2) algorithm??
+            // Works fine if sentence is short
+
         ]),
         [ newKey(name+"-last"," ").log().wait() ]
     ].flat(1);
 }
+
+
 dashed_nolog = (name, sentence) => {  // same as above except it doesn't log each key press, used for the practice trials as we don't need that data.
     const words = sentence.split(" ");  
     return [  
@@ -48,8 +103,10 @@ dashed_nolog = (name, sentence) => {  // same as above except it doesn't log eac
         [ newKey(name+"-last"," ").wait() ]
     ].flat(1);
 }
+
 // This will allow breaks to be inserted at an interval (IMPORTANT: the function is SepWithN [capital S] but the function used in Sequence is sepWithN [lowercase S], not sure why but important) 
 function SepWithN(sep, main, n) {
+    
     this.args = [sep,main];
     this.run = function(arrays) {
         assert(arrays.length == 2, "Wrong number of arguments (or bad argument) to SepWithN");
@@ -70,7 +127,11 @@ function SepWithN(sep, main, n) {
         }
     }
 }
-function sepWithN(sep, main, n) { return new SepWithN(sep, main, n); }  // this is the function to call in the sequence below, not sure why
+
+
+function sepWithN(sep, main, n) { return new SepWithN(sep, main, n); } 
+//Wrapper function to call main function
+
 Sequence("Consent", "LangCheck", "CollCheck", "HardwareQ", "Attention", "Calibration", "Instructions",
 "PracIntro", "PracTrial", "ExpIntro", sepWithN("break", randomize("ExpTrial"),16), SendResults(), "EndExp")  
 
