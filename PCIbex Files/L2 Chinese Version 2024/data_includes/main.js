@@ -7,27 +7,19 @@ NOTES FOR LIN FROM MAX ABOUT REPURPOSING FOR NEW PARTICIPANTS OUTSIDE OF ORIGINA
 -Question about college needs to be changed or removed
     -remove from Sequence also
 -Search for "XXXX" in comments for places to change based on language
-
-
-/*
-I made comments to try to trace the program and learn about PCIbex.
 */
 
-/* 
-
-
-Notes
-
-The showWord command is where the punctuation manipulation occurs, it seems that dashed only changes when changing the length of the masks to something other than their original length
-Line breaks <br> must not have a space before them, otherwise they require a button press to move through.
-Comments break things in the .css files, so don't use them.
-*/
 
 // Max: These two functions were written by Jeremy (PCIbex creator), I have limited understanding of their functionality.
 
-
-// showWord is the function name. The function has two variables as input: the sentence, and the index of the word we want to show
-
+/**
+ *  Concatenates the sentence to show only the word at the indexed entered. Everything else is hidden with only the
+ *  underline revealed
+ * 
+ * @param array_of_word - The sentence that the subject is currently seeing.
+ * @param show_index - The index we want to show the word at
+ * 
+ */
 showWord = (array_of_word,show_index) => "<p>" + // swap "<p>" with "<p style='font-family: monospace;'>" to allow the masked font to change
 
     // The body of the function follows after the arrow
@@ -45,24 +37,15 @@ showWord = (array_of_word,show_index) => "<p>" + // swap "<p>" with "<p style='f
     // otherwise we return a span container that has a bottom border revealed but the words themselves hidden
     // This accounts for the masked words
 
-
-    // Example output of array_of_word.map( (word,current_index) where array_of_word = ["apple", "banana", "cherry"]
-    // and show_index = 1
-        
-    //   [<span style='border-bottom:solid 1px black;'>
-    //     <span style='visibility: hidden;'>apple</span>
-    //   </span>,
-    //   <span>banana</span>,
-    //   <span style='border-bottom:solid 1px black;'>
-    //     <span style='visibility: hidden;'>cherry</span>
-    //   </span>]
-
-
-
-
   } ).join(" ") + "</p>"; // the " " dictates what character is used to separate each word, can use &nbsp instead to allow multiple spaces
-  // join() concatenates the words into a sentence
 
+/**
+ * Controls word revealing. Reveals the next word when the subject presses space.
+ * 
+ * @param name - Name of the current trial
+ * @param sentence - The sentence that is passed in
+ * 
+ */
 
 dashed = (name, sentence) => {
 
@@ -90,6 +73,14 @@ dashed = (name, sentence) => {
     ].flat(1);
 }
 
+/**
+ * Controls word revealing. Reveals the next word when the subject presses space. 
+ * Does not log the presses.
+ * 
+ * @param name - Name of the current trial
+ * @param sentence - The sentence that is passed in
+ * 
+ */
 
 dashed_nolog = (name, sentence) => {  // same as above except it doesn't log each key press, used for the practice trials as we don't need that data.
     const words = sentence.split(" ");  
@@ -103,10 +94,22 @@ dashed_nolog = (name, sentence) => {  // same as above except it doesn't log eac
     ].flat(1);
 }
 
-// This will allow breaks to be inserted at an interval (IMPORTANT: the function is SepWithN [capital S] but the function used in Sequence is sepWithN [lowercase S], not sure why but important) 
+
+
+/**
+ * Inserts seperator elements for each n main elements added. Mainly used to insert breaks at
+ * set intervals.
+ * 
+ * @param main - Array of elements. Elements can be each self paced reading trials.
+ * @param sep - Array of elements. Elements can be "breaks" in between each new sentence.
+ * @param n - The number of new sentence that the subject has to go through before receiving break.
+ */
+
 function SepWithN(sep, main, n) {
     
     this.args = [sep,main];
+
+    //Automatically called when a new instance is created;
     this.run = function(arrays) {
         assert(arrays.length == 2, "Wrong number of arguments (or bad argument) to SepWithN");
         assert(parseInt(n) > 0, "N must be a positive number");
@@ -130,6 +133,8 @@ function SepWithN(sep, main, n) {
 
 function sepWithN(sep, main, n) { return new SepWithN(sep, main, n); } 
 //Wrapper function to call main function
+
+
 
 Sequence("Consent", "LangCheck", "CollCheck", "HardwareQ", "Attention", "Calibration", "Instructions",
 "PracIntro", "PracTrial", "ExpIntro", sepWithN("break", randomize("ExpTrial"),16), SendResults(), "EndExp")  
