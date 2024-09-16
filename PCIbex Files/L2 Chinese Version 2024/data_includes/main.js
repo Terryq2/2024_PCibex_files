@@ -178,7 +178,7 @@ Template(GetTable("consent_form.csv"), row=> newTrial("Consent",
  */
 Template(GetTable("language_checks.csv"), row=> newTrial("LangCheck",
     newText(row.language_select).print(),
-    newText("LangChk", row.language_fail).center(),
+    newText("if_not_chinese", row.language_fail).center(),
     newButton("Continue").center(),
         newDropDown("LangSelect","Native language").print()
         .add("English","Chinese","Korean","Spanish","Other")
@@ -186,8 +186,8 @@ Template(GetTable("language_checks.csv"), row=> newTrial("LangCheck",
         .callback(getDropDown("LangSelect").log("All")   //Participant can change choice, but each selection gets logged
 
             .test.selected("Chinese")
-            .success(getButton("Continue").print(),getText("LangChk").remove())
-            .failure(getButton("Continue").remove(),getText("LangChk").print())
+            .success(getButton("Continue").print(),getText("if_not_chinese").remove())
+            .failure(getButton("Continue").remove(),getText("if_not_chinese").print())
 
         ),
     getButton("Continue").wait()
