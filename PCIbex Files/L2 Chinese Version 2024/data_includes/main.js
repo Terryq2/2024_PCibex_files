@@ -131,10 +131,9 @@ function SepWithN(sep, main, n) {
 }
 
 
+
 function sepWithN(sep, main, n) { return new SepWithN(sep, main, n); } 
-//Wrapper function to call main function
-
-
+//Wrapper function to call main functions
 
 Sequence("Consent", "LangCheck", "CollCheck", "HardwareQ", "Attention", "Calibration", "Instructions",
 "PracIntro", "PracTrial", "ExpIntro", sepWithN("break", randomize("ExpTrial"),16), SendResults(), "EndExp")  
@@ -147,48 +146,83 @@ newTrial("break",
     newTimer("BreakTimer",30000).start().wait(),
     newButton("BreakEnd","Click to end the break").center().print().wait().remove()
 )
-//Consent
-Template("LargeText.csv", row=> newTrial("Consent",
+
+/**
+ * Template for the consent form
+ * 
+ * Changes made to original version:
+ * Moved the text of the consent form to "ConsentForm.csv"
+ * 
+ * TODO: It is possible to switch out the "language" given any language. That is, we don't have to have multiple files differing only on language.
+ * TODO: Ask if the number in the text is still her phone number
+ */
+
+Template(GetTable("consent_form.csv"), row=> newTrial("Consent",
     newText("Thank you for signing up for our study!").center().css("font-size","30px").print(),
-    newText(row.ConsentC).css("margin-top","20px").print(),  //XXXX row.ConsentX needs to be specific to the language
+    newText(row.consent_chinese).css("margin-top","20px").print(),
     newButton("I consent to participate in this study").center().print().wait().remove()
 ))
-//Language Check
-Template("LargeText.csv", row=> newTrial("LangCheck",
+
+
+
+
+/**
+ * Template for the language check
+ * 
+ * Changes made to original version:
+ * Moved the text of the consent form to "language_checks.csv"
+ * Refactored the "if statement" to be "if else" instead of enumerating the cases
+ * 
+ * 
+ * 
+ */
+Template(GetTable("language_checks.csv"), row=> newTrial("LangCheck",
+    newText(row.language_select).print(),
+    newText("LangChk", row.language_fail).center(),
     newButton("Continue").center(),
-    newText("LangChk", row.LChkC).center(),  //XXXX Row.LChkX must be changed based on language
-    newText(row.LChkTxt).print(),
         newDropDown("LangSelect","Native language").print()
         .add("English","Chinese","Korean","Spanish","Other")
         .css("margin-left","20px").css("margin-top","10px").css("margin-bottom","20px")
         .callback(getDropDown("LangSelect").log("All")   //Participant can change choice, but each selection gets logged
-            .test.selected("English").success(getButton("Continue").remove(),getText("LangChk").print())
-			.test.selected("Chinese").success(getButton("Continue").print(),getText("LangChk").remove())//XXXX These rows must be changed, target language has print before remove.
-            .test.selected("Korean").success(getButton("Continue").remove(),getText("LangChk").print())
-            .test.selected("Spanish").success(getButton("Continue").remove(),getText("LangChk").print())
-            .test.selected("Other").success(getButton("Continue").remove(),getText("LangChk").print())              
+
+            .test.selected("Chinese")
+            .success(getButton("Continue").print(),getText("LangChk").remove())
+            .failure(getButton("Continue").remove(),getText("LangChk").print())
+
         ),
     getButton("Continue").wait()
 ))
-//College Checker
-Template("LargeText.csv", row=> newTrial("CollCheck",
+
+/**
+ * Template for college questionnaire
+ * 
+ * Changes made to original version:
+ * No changes are made to code. Only changes made are text based.
+ * 
+ * 
+ * TODO: Some parts of seems to be redundant
+ * TODO: Change college list
+ * 
+ */
+
+Template(GetTable("college_checks.csv"), row=> newTrial("CollCheck",
     newTimer("buffer",150),
     newButton("ContinueYes","Continue"),
     newButton("ContinueNo","Continue")
         .callback(
             clear(),
             getTimer("buffer").start().wait(),
-            newText(row.NotColl).print()
+            newText(row.not_college_student).print()
         ),
     newDropDown("DD1Drop","Please select a response") //Has to be created first, otherwise it logs after the others
         .add("Yes","No").css("margin-left","20px").css("margin-top","10px").css("margin-bottom","40px"),
     newDropDown("DD2Drop","Please select a response").add(
-        "0 Years, will begin first year (freshman) in Fall 2021",
-        "1 Year, will begin second year (sophomore) in Fall 2021",
-        "2 Years, will begin third year (junior) in Fall 2021",
-        "3 Years, will begin fourth year (senior) in Fall 2021",
-        "4 or more years, I will begin another semester in Fall 2021",
-        "I am a graduate student and will begin another semester in Fall 2021")
+        "0 Years, am begining my first year (freshman) in Fall 2024",
+        "1 Year, am begining my second year (sophomore) in Fall 2024",
+        "2 Years, am begining my third year (junior) in Fall 2024",
+        "3 Years, am begining my fourth year (senior) in Fall 2024",
+        "4 or more years, I am begining another semester in Fall 2024",
+        "I am a graduate student and I am begining another semester in Fall 2024")
         .callback( 
             getTimer("buffer").start().wait()
         ),
@@ -225,6 +259,7 @@ Template("LargeText.csv", row=> newTrial("CollCheck",
         ).print().wait(),
     getButton("ContinueYes").wait()
 ))
+
 //Hardware Question
 Template("LargeText.csv", row=> newTrial("HardwareQ" ,
     newTimer("buffer",150),
