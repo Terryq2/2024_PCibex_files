@@ -194,7 +194,9 @@ Template(GetTable("language_checks.csv"), row=> newTrial("LangCheck",
 ))
 
 /**
- * Template for college questionnaire
+
+ * Template for questions regarding colleges
+
  * 
  * Changes made to original version:
  * No changes are made to code. Only changes made are text based.
@@ -228,10 +230,13 @@ Template(GetTable("college_checks.csv"), row=> newTrial("CollCheck",
         ),
     newText("DD1Text","Are you currently a college student?").print(),
     newDropDown("DD3Drop", "Please select a response").add(
+
         "University of Pittsburgh","Community College of Allegheny County","Carnegie Mellon University",
         "Duquesne University","Point Park University","Chatham University","Carlow University",        
         "UPMC Shadyside School of Nursing","Pittsburgh Theological Seminary","West Penn Hospital School of Nursing",        
-        "Kaplan Career Institute","Other/Not Listed","Prefer not to answer")
+        "Kaplan Career Institute","Other/Not Listed","Prefer not to answer"
+
+    )
         .callback( 
             getTimer("buffer").start().wait(),
             getButton("ContinueYes").center().print()
@@ -260,19 +265,44 @@ Template(GetTable("college_checks.csv"), row=> newTrial("CollCheck",
     getButton("ContinueYes").wait()
 ))
 
+
+
+/**
+ * Template for hardware questions
+ * 
+ * Changes made to original version:
+ * Moved text to a seperate file for readability
+ * 
+ * TODO: None.
+ * 
+ */
+
 //Hardware Question
-Template("LargeText.csv", row=> newTrial("HardwareQ" ,
+Template(GetTable("hard_ware_checks.csv"), row=> newTrial("HardwareQ" ,
     newTimer("buffer",150),
-    newText(row.DvcTxt).print(),
+    newText(row.device).print(),
     newDropDown("DeviceType","What device are you using for this experiment").css("margin-left","20px")
         .add("Desktop Computer","Laptop Computer").print().wait()
         .test.selected().success(getTimer("buffer").start().wait()).log(),
-    newText(row.BrwsTxt).css("margin-top","20px").print(),
+    newText(row.browser).css("margin-top","20px").print(),
     newDropDown("BrowserType","What Web-Browser are you using for this experiment").css("margin-left","20px")
         .add("Google Chrome","Firefox","Safari","Internet Explorer","Microsoft Edge","Opera","Other").print().wait()
         .test.selected().success(getTimer("buffer").start().wait()).log(),
     newButton("Continue").css("margin-top","25px").center().print().wait()
 ))
+
+
+/**
+ * Template for instructions to be in a test environment
+ * 
+ * Changes made to original version:
+ * None. This seems grotesque but is actually quite efficient compared to the other implementations
+ * that I've attempted
+ * 
+ * TODO: None
+ * 
+ * 
+ */
 //Attention
 Template("LargeText.csv", row=> newTrial("Attention",
     newImage("mark1","checkmark.png"),newImage("mark2","checkmark.png"),newImage("mark3","checkmark.png"),newImage("mark4","checkmark.png"),newImage("mark5","checkmark.png"),
@@ -296,6 +326,21 @@ Template("LargeText.csv", row=> newTrial("Attention",
     getButton("check5").enable().once().wait().after(getImage("mark5")),
     getButton("agree").enable().wait()
 ))
+
+/**
+ * Template for instructions to be in a test environment
+ * 
+ * Changes:
+ * Added a 8 seconds timer to prevent reader to speed through the test.
+ * 
+ * TODO: None
+ * 
+ * 
+ */
+
+
+
+
 //Calibration
 Template("LargeText.csv", row=> newTrial("Calibration",
     newText(row.AdjHead).css("margin-bottom","15px").css("font-size","30px").center().print(),
@@ -304,10 +349,16 @@ Template("LargeText.csv", row=> newTrial("Calibration",
     newText(row.AdjTxt).css("line-height","30px").css("margin-top","25px").css("margin-left","50px").print(),
     newButton("I verify the box above fits on screen<br> and the text inside is readable.").center().print().wait()
 ))
+
+
+
+
+
 //Instructions
 Template("LargeText.csv", row=> newTrial("Instructions",
     newText("<b>Experiment Instructions</b><br>").center().css("font-size","30px").print(),
     newText(row.InstTxt).css("line-height","30px").print(),
+    newTimer(8000).start().wait(),
     newButton("Continue").center().print().wait().remove()
 ))
 //Practice Intro
@@ -402,7 +453,7 @@ Template("L2Full.csv",row => newTrial("ExpTrial",
     newText("spacer","<br>"),
     newVar("TrialNum",0).global(),
     newVar("warncount",0).global(),
-    newVar("CompQResp","N/A").global(),   // making these global allows them to be logged as their own columns, 
+    newVar("CompQResp" + "","N/A").global(),   // making these global allows them to be logged as their own columns, 
     newVar("CorResp",row.CorResp),
     newVar("Feedback","N/A").global(),
     newText("CompQ",row.CompQ),
