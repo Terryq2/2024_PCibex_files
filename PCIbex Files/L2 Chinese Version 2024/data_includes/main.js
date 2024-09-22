@@ -194,7 +194,9 @@ Template(GetTable("language_checks.csv"), row=> newTrial("LangCheck",
 ))
 
 /**
+
  * Template for questions regarding colleges
+
  * 
  * Changes made to original version:
  * No changes are made to code. Only changes made are text based.
@@ -262,6 +264,7 @@ Template(GetTable("college_checks.csv"), row=> newTrial("CollCheck",
         ).print().wait(),
     getButton("ContinueYes").wait()
 ))
+
 
 
 /**
